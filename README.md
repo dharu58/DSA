@@ -10,7 +10,7 @@ This repo serves as my digital notebook and progress log as I tackle coding prob
 ## 📌 What's Inside?
 
 Instead of a rigid setup, this repo grows as I learn! You'll find:
-* 💡 **Problem Solutions**: Implementations of various LeetCode, HackerRank, or practice problems.
+* 💡 **Problem Solutions**: That i code on leetcode and vscode
 * 🧠 **Key Concepts**: My implementations of core data structures and classic algorithms from scratch.
 * ⚡ **Optimizations**: Code focusing on optimal Time & Space complexities.
 
