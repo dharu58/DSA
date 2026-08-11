@@ -1,0 +1,38 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+vector<int> findMissingRepeatingNumbers(vector<int> &nums){
+    int n = nums.size();
+    int hash[n+1] = {0};
+    for(int i = 0; i < n; i++){
+        hash[nums[i]]++;    
+    }
+    int repeating = -1, missing = -1; 
+    for(int i = 1; i < n; i++){
+        if(hash[i] == 2) repeating = i; 
+        else if (hash[i] == 0) missing = i;
+        if(repeating != -1, missing != -1){
+            break;
+        }
+    }
+    return {repeating, missing};
+}
+
+int main(){
+    int n; 
+    cout << "Enter the number of elements in the array : ";
+    cin >> n; 
+
+    vector<int> nums(n);
+    for(int i = 0; i < n; i++){
+        cout << "Enter the element "<< i << " : ";
+        cin >> nums[i];
+    }
+    vector<int> result = findMissingRepeatingNumbers(nums);
+    for(auto it : result){
+        cout << it << " ";
+    }
+    cout << endl;
+    return 0;
+    
+}
