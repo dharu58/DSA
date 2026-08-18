@@ -1,6 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std; 
 
+//time complexity = O(log2n)
 int floorrr(vector<int> &nums, int target){
     int n = nums.size();
     int low = 0, high = n - 1; 
